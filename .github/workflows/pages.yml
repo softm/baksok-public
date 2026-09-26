@@ -24,13 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Ensure GitHub Pages site exists
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api --method POST             -H "Accept: application/vnd.github+json"             -H "X-GitHub-Api-Version: 2022-11-28"             "/repos/${{ github.repository }}/pages"             -f build_type=workflow || true
-
-      - uses: actions/configure-pages@v5
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
