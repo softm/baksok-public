@@ -1,0 +1,10 @@
+name: Archive audit
+on:
+  push:
+    branches: [main, master, gh-pages]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive-audit:
+    uses: softm/softm.github.io/.github/workflows/archive-audit-reusable.yml@23f1a57873d96d3f071664a52a43d934682c5b87
