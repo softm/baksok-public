@@ -13,3 +13,5 @@
 기존 공개 ChatGPT Site `https://seohae-baksok-nakji.softm.chatgpt.site`의 소개·메뉴·위치 내용을 이 저장소의 `index.html`로 이관했습니다.
 
 기존 ChatGPT Site URL은 운영 URL로 사용하지 않고 과거 배포 이력으로만 보존합니다.
+
+- Pages activation verified trigger: 2026-09-26 22:27 KST
