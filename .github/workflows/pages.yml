@@ -2,10 +2,12 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - DEPLOYED_PAGE_URL.txt
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -37,3 +39,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Record deployed URL
+        run: |
+          printf '%s\n' "${{ steps.deployment.outputs.page_url }}" > DEPLOYED_PAGE_URL.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add DEPLOYED_PAGE_URL.txt
+          git commit -m "Record deployed Pages URL [skip ci]" || exit 0
+          git push
