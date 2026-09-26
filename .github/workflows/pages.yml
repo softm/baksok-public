@@ -24,20 +24,37 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      - name: Pages preflight
+        id: preflight
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if gh api "/repos/${{ github.repository }}/pages" >/dev/null 2>&1; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "GitHub Pages is enabled."
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::GitHub Pages must be enabled once in Settings > Pages with Source = GitHub Actions."
+          fi
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Configure GitHub Pages
+        if: steps.preflight.outputs.ready == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: steps.preflight.outputs.ready == 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
       - name: Deploy to GitHub Pages
+        if: steps.preflight.outputs.ready == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
 
       - name: Record deployed URL
+        if: steps.preflight.outputs.ready == 'true'
         run: |
           printf '%s\n' "${{ steps.deployment.outputs.page_url }}" > DEPLOYED_PAGE_URL.txt
           git config user.name "github-actions[bot]"
