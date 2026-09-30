@@ -1,0 +1,16 @@
+name: Align archive list and detail titles
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/sync-record-titles.yml]
+permissions:
+  contents: write
+  actions: write
+  pages: write
+jobs:
+  titles:
+    uses: softm/softm.github.io/.github/workflows/sync-record-titles-reusable.yml@52574af45cb7f04b389b12ef954d6fdba9d74f4e
+    with:
+      source_branch: main
+      request_pages_build: true
