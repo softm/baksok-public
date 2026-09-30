@@ -10,7 +10,7 @@ permissions:
   pages: write
 jobs:
   titles:
-    uses: softm/softm.github.io/.github/workflows/sync-record-titles-reusable.yml@52574af45cb7f04b389b12ef954d6fdba9d74f4e
+    uses: softm/softm.github.io/.github/workflows/sync-record-titles-reusable.yml@f59f83eedafec1a5d8b31215b9b2f88885a2b811
     with:
       source_branch: main
-      request_pages_build: true
+      trigger_workflow: pages.yml
