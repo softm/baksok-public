@@ -1,8 +1,0 @@
-{
-  "archiveDeployment": true,
-  "requestedAt": "2026-09-27T07:01:00+09:00",
-  "scope": "all-projects",
-  "includeMedia": true,
-  "policy": "public index + public project info + authenticated private Vercel delivery",
-  "note": "Global archive redeploy trigger"
-}
