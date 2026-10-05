@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "20260929-gwangjin-sofa-stool",
+  "date": "2026-09-29",
+  "title": "2026-09-29 서해박속낙지 신당동 광진소파 스툴 제작 완료",
+  "project": "baksok-public",
+  "visibility": "public",
+  "canonicalUrl": "https://softm.github.io/baksok-public/records/20260929-gwangjin-sofa-stool/",
+  "recordPath": "public/records/20260929-gwangjin-sofa-stool",
+  "integrity": "sha256",
+  "sourceCount": 6,
+  "derivedCount": 2,
+  "files": [
+    {
+      "path": "20260929_164216.jpg",
+      "role": "original-image",
+      "size": 267174,
+      "sha256": "320fe90c3b7817bae2563c0ed83e8fdb63da52b7baaa6eca73d0e8056c462e82"
+    },
+    {
+      "path": "20260929_164230.jpg",
+      "role": "original-image",
+      "size": 281899,
+      "sha256": "4778087ce69b5f4ce5becd5a6baf9548fbb7fb76bcf7969932a9f99e2bcb57fd"
+    },
+    {
+      "path": "20260929_172550.jpg",
+      "role": "original-image",
+      "size": 212599,
+      "sha256": "0365f5be5612d86c189c165e78f5e711acc7a97bddb15b2830bf5720c8869b26"
+    },
+    {
+      "path": "20260929_172557.jpg",
+      "role": "original-image",
+      "size": 253715,
+      "sha256": "e96797e33f2b5ae9cd9e6333b8d402efd642246b0d0f81697d334bd31b8910f9"
+    },
+    {
+      "path": "20260929_164219.mp4",
+      "role": "original-video-hevc",
+      "size": 8656506,
+      "sha256": "0f2c3b8dffd42746bae86e01e0b9cc0b8cedb50a33dcdbe9c9d4371a13921197"
+    },
+    {
+      "path": "20260929_172600.mp4",
+      "role": "original-video-hevc",
+      "size": 4977796,
+      "sha256": "69a958cfe7e46deb46a48123232a7088f72e4a770d29636e2619bf98ca4d5a3e"
+    },
+    {
+      "path": "20260929_164219_web.mp4",
+      "role": "derived-video-h264",
+      "size": 1122486,
+      "sha256": "d850cf3cdc7d4a61830ea681ea0db04e83f46b1df899f460e204a9fd742de9d1",
+      "derivedFrom": "20260929_164219.mp4"
+    },
+    {
+      "path": "20260929_172600_web.mp4",
+      "role": "derived-video-h264",
+      "size": 425283,
+      "sha256": "940c664b4b380dd995885c6d62b885377cd39dee62f1824783da01966b36fc8e",
+      "derivedFrom": "20260929_172600.mp4"
+    }
+  ]
+}
