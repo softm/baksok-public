@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "20260929-gwangjin-sofa-stool",
+  "date": "2026-09-29",
+  "title": "2026-09-29 서해박속낙지 신당동 광진소파 스툴 제작 완료",
+  "visibility": "public",
+  "project": "baksok",
+  "category": "시설·인테리어",
+  "summary": "신당동 광진소파에서 제작한 서해박속낙지 매장용 스툴(500 × 500 × 450 mm) 제작 완료 기록. 사진 4장과 동영상 2개 포함.",
+  "spec": "500 × 500 × 450 mm",
+  "vendor": "신당동 광진소파",
+  "files": {
+    "html": "index.html",
+    "markdown": "20260929_서해박속낙지_광진소파_스툴_제작완료.md",
+    "images": [
+      "20260929_164216.jpg",
+      "20260929_164230.jpg",
+      "20260929_172550.jpg",
+      "20260929_172557.jpg"
+    ],
+    "videos": [
+      "20260929_164219.mp4",
+      "20260929_172600.mp4"
+    ]
+  },
+  "videoDelivery": "H.264 web-compatible copies generated from uploaded HEVC MP4 originals"
+}
