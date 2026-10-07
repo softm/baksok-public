@@ -26,11 +26,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build HTML-first archive records
+      - name: Install Markdown renderer
+        run: python -m pip install markdown
+      - name: Build archive records
         run: |
           python - <<'PY'
           from pathlib import Path, PurePosixPath
-          import hashlib, html, json, os, re, shutil, stat, tempfile, unicodedata, zipfile
+          import hashlib, html, json, mimetypes, re, shutil, stat, tempfile, unicodedata, zipfile
+          import markdown
 
           ROOT=Path.cwd(); INBOX=ROOT/'zip'; ARCHIVE=ROOT/'archive'
           IGNORE={'.DS_Store','Thumbs.db','__MACOSX','.gitkeep'}
@@ -46,8 +49,7 @@ jobs:
               rel=p.relative_to(root)
               return p.is_file() and not any(x in IGNORE or x.startswith('._') for x in rel.parts)
 
-          def files(root):
-              return [p for p in sorted(root.rglob('*')) if wanted(p,root)]
+          def files(root): return [p for p in sorted(root.rglob('*')) if wanted(p,root)]
 
           def tree_sha(root):
               h=hashlib.sha256()
@@ -60,13 +62,12 @@ jobs:
               total=0
               with zipfile.ZipFile(z) as q:
                   for m in q.infolist():
-                      n=unicodedata.normalize('NFC',m.filename)
-                      pp=PurePosixPath(n)
+                      n=unicodedata.normalize('NFC',m.filename); pp=PurePosixPath(n)
                       if m.is_dir() or any(x in IGNORE or x.startswith('._') for x in pp.parts): continue
                       if pp.is_absolute() or '..' in pp.parts or '\\' in n or '\x00' in n: raise ValueError('unsafe zip path')
                       if stat.S_ISLNK(m.external_attr>>16): raise ValueError('symlink refused')
-                      total += m.file_size
-                      if m.file_size >= 100*1024*1024 or total > 2*1024**3: raise ValueError('oversized zip')
+                      total+=m.file_size
+                      if m.file_size>=100*1024*1024 or total>2*1024**3: raise ValueError('oversized zip')
                       out=d.joinpath(*pp.parts); out.parent.mkdir(parents=True,exist_ok=True)
                       with q.open(m) as a,out.open('wb') as b: shutil.copyfileobj(a,b)
 
@@ -74,69 +75,126 @@ jobs:
               while True:
                   kids=[p for p in root.iterdir() if p.name not in IGNORE]
                   if len(kids)==1 and kids[0].is_dir(): root=kids[0]
-                  else: return root
+                  else:return root
 
           def choose_html(root):
               hs=[p for p in files(root) if p.suffix.lower() in {'.html','.htm'}]
-              if not hs: return None
+              if not hs:return None
               exact=[p for p in hs if p.name.lower()=='index.html']
               if exact:return exact[0]
               top=[p for p in hs if p.parent==root]
               return max(top or hs,key=lambda p:p.stat().st_size)
 
+          def choose_text(root,ext):
+              xs=[p for p in files(root) if p.suffix.lower()==ext]
+              if not xs:return None
+              top=[p for p in xs if p.parent==root]
+              readmes=[p for p in xs if p.stem.lower() in {'readme','summary','index'}]
+              return max(readmes or top or xs,key=lambda p:p.stat().st_size)
+
+          def title_from(name):
+              s=re.sub(r'^(20\d{6})[_ -]*','',name)
+              s=re.sub(r'\.(zip)$','',s,flags=re.I).replace('_',' ').strip()
+              return s or name
+
+          def date_from(name):
+              m=re.match(r'^(20\d{6})',name)
+              if not m:return ''
+              x=m.group(1); return f'{x[:4]}-{x[4:6]}-{x[6:8]}'
+
+          def media_html(root):
+              out=[]
+              for p in files(root):
+                  rel=p.relative_to(root).as_posix()
+                  ext=p.suffix.lower()
+                  q=html.escape(rel,quote=True); label=html.escape(rel)
+                  if ext in {'.jpg','.jpeg','.png','.webp','.gif','.avif','.svg'}:
+                      out.append(f'<figure><img loading="lazy" src="{q}" alt="{label}"><figcaption>{label}</figcaption></figure>')
+                  elif ext in {'.mp4','.webm','.mov','.m4v'}:
+                      out.append(f'<figure><video controls preload="metadata" src="{q}"></video><figcaption>{label}</figcaption></figure>')
+                  elif ext in {'.mp3','.m4a','.wav','.ogg','.flac','.aac'}:
+                      out.append(f'<figure><audio controls preload="metadata" src="{q}"></audio><figcaption>{label}</figcaption></figure>')
+                  elif ext not in {'.html','.htm','.md','.txt'}:
+                      out.append(f'<p><a href="{q}">{label}</a></p>')
+              return '\n'.join(out)
+
+          def shell(title,date,body,attachments):
+              return f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>{html.escape(title)}</title><style>
+body{{font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;max-width:980px;margin:40px auto;padding:0 20px;line-height:1.7;color:#222}}
+img,video{{max-width:100%;height:auto}} audio{{width:100%}} figure{{margin:24px 0}} figcaption{{font-size:13px;color:#666;word-break:break-all}}
+pre{{white-space:pre-wrap;word-break:break-word;background:#f6f8fa;padding:16px;border-radius:10px}} table{{border-collapse:collapse;width:100%;display:block;overflow:auto}} th,td{{border:1px solid #ddd;padding:6px 9px}}
+</style></head><body><h1>{html.escape(title)}</h1>{f'<p>{html.escape(date)}</p>' if date else ''}<main>{body}</main>{f'<hr><h2>첨부 자료</h2>{attachments}' if attachments else ''}</body></html>'''
+
+          def generated_html(root,input_name):
+              title=title_from(input_name); date=date_from(input_name)
+              md=choose_text(root,'.md')
+              txt=choose_text(root,'.txt')
+              attachments=media_html(root)
+              if md:
+                  raw=md.read_text(encoding='utf-8',errors='replace')
+                  body=markdown.markdown(raw,extensions=['tables','fenced_code'])
+                  return shell(title,date,body,attachments),'markdown-generated',md.relative_to(root).as_posix()
+              if txt:
+                  raw=txt.read_text(encoding='utf-8',errors='replace')
+                  body='<pre>'+html.escape(raw)+'</pre>'
+                  return shell(title,date,body,attachments),'text-generated',txt.relative_to(root).as_posix()
+              listing=[]
+              for p in files(root):
+                  rel=p.relative_to(root).as_posix()
+                  listing.append(f'<li><a href="{html.escape(rel,quote=True)}">{html.escape(rel)}</a> <small>({p.stat().st_size:,} bytes)</small></li>')
+              body='<p>HTML/Markdown/TXT 원문이 없어 첨부 미디어·문서 목록을 기준으로 자동 생성한 아카이브입니다.</p><ul>'+''.join(listing)+'</ul>'
+              return shell(title,date,body,attachments),'media-generated',''
+
           def slug_for(name,fingerprint):
-              m=re.match(r'^(20\d{6})[_ -]?(.*)$',name)
-              date=m.group(1) if m else 'archive'
-              tail=(m.group(2) if m else name).lower()
-              tail=re.sub(r'\.(zip)$','',tail)
-              tail=re.sub(r'[^a-z0-9]+','-',tail).strip('-')[:48]
+              m=re.match(r'^(20\d{6})[_ -]?(.*)$',name); date=m.group(1) if m else 'archive'
+              tail=(m.group(2) if m else name).lower(); tail=re.sub(r'\.(zip)$','',tail); tail=re.sub(r'[^a-z0-9]+','-',tail).strip('-')[:48]
               return f"{date}-{tail or fingerprint[:10]}"
 
-          records=[]; skipped=[]
-          inputs=[]
-          if INBOX.exists():
-              inputs += [p for p in sorted(INBOX.iterdir()) if p.name not in IGNORE and (p.is_dir() or p.suffix.lower()=='.zip')]
+          records=[]; errors=[]; inputs=[]
+          if INBOX.exists(): inputs=[p for p in sorted(INBOX.iterdir()) if p.name not in IGNORE and (p.is_dir() or p.suffix.lower()=='.zip')]
+
           for inp in inputs:
-              with tempfile.TemporaryDirectory() as td:
-                  stage=Path(td)/'src'; stage.mkdir()
-                  if inp.is_dir():
-                      shutil.copytree(inp,stage,dirs_exist_ok=True)
-                      src=unwrap(stage); fp=tree_sha(src); kind='folder'
-                  else:
-                      safe_extract(inp,stage); src=unwrap(stage); fp=sha(inp); kind='zip'
-                  entry=choose_html(src)
-                  if not entry:
-                      skipped.append({'input':inp.name,'reason':'HTML source missing; MD is not converted'})
-                      continue
-                  slug=slug_for(inp.stem if inp.is_file() else inp.name,fp)
-                  dst=ARCHIVE/slug
-                  manifest=dst/'archive-manifest.json'
-                  if manifest.exists():
-                      old=json.loads(manifest.read_text(encoding='utf-8'))
-                      if old.get('inputSha256')==fp:
-                          records.append(old); continue
-                      skipped.append({'input':inp.name,'reason':'existing canonical slug has different source'})
-                      continue
-                  shutil.copytree(src,dst)
-                  rel=entry.relative_to(src)
-                  if rel.as_posix()!='index.html': shutil.copy2(dst/rel,dst/'index.html')
-                  if sha(entry)!=sha(dst/'index.html'): raise SystemExit('HTML byte identity check failed')
-                  mm={
-                    'schemaVersion':1,'id':slug,'slug':slug,'input':inp.name,'inputKind':kind,
-                    'inputSha256':fp,'entrySource':rel.as_posix(),'entrySha256':sha(entry),
-                    'files':[{'path':p.relative_to(dst).as_posix(),'size':p.stat().st_size,'sha256':sha(p)} for p in files(dst)]
-                  }
-                  manifest.write_text(json.dumps(mm,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-                  records.append(mm)
+              try:
+                  with tempfile.TemporaryDirectory() as td:
+                      stage=Path(td)/'src'; stage.mkdir()
+                      if inp.is_dir(): shutil.copytree(inp,stage,dirs_exist_ok=True); src=unwrap(stage); fp=tree_sha(src); kind='folder'
+                      else: safe_extract(inp,stage); src=unwrap(stage); fp=sha(inp); kind='zip'
+                      entry=choose_html(src)
+                      slug=slug_for(inp.stem if inp.is_file() else inp.name,fp); dst=ARCHIVE/slug; manifest=dst/'archive-manifest.json'
+                      if manifest.exists():
+                          old=json.loads(manifest.read_text(encoding='utf-8'))
+                          if old.get('inputSha256')==fp: records.append(old); continue
+                          raise ValueError('existing canonical slug has different source')
+                      shutil.copytree(src,dst)
+                      generated=False
+                      if entry:
+                          rel=entry.relative_to(src)
+                          if rel.as_posix()!='index.html': shutil.copy2(dst/rel,dst/'index.html')
+                          source_type='html-source'; entry_source=rel.as_posix()
+                          if sha(entry)!=sha(dst/'index.html'): raise ValueError('HTML byte identity check failed')
+                      else:
+                          content,source_type,entry_source=generated_html(src,inp.name)
+                          (dst/'index.html').write_text(content,encoding='utf-8')
+                          generated=True
+                      mm={
+                        'schemaVersion':2,'id':slug,'slug':slug,'date':date_from(inp.name),'title':title_from(inp.name),
+                        'input':inp.name,'inputKind':kind,'inputSha256':fp,'entrySource':entry_source or 'generated',
+                        'entryType':source_type,'generatedHtml':generated,'entrySha256':sha(dst/'index.html'),
+                        'files':[{'path':p.relative_to(dst).as_posix(),'size':p.stat().st_size,'sha256':sha(p)} for p in files(dst) if p.name!='archive-manifest.json']
+                      }
+                      manifest.write_text(json.dumps(mm,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); records.append(mm)
+              except Exception as e:
+                  errors.append({'input':inp.name,'error':str(e)})
 
           manifests=[]
           for p in sorted(ARCHIVE.glob('*/archive-manifest.json')):
               try: manifests.append(json.loads(p.read_text(encoding='utf-8')))
               except Exception: pass
-          (ARCHIVE/'index.json').write_text(json.dumps({'records':manifests,'skipped':skipped},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          cards=''.join(f'<li><a href="{html.escape(x["slug"])}/">{html.escape(x["slug"])}</a></li>' for x in reversed(manifests))
-          (ARCHIVE/'index.html').write_text('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>Archive</title><style>body{font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.7}li{margin:10px 0}</style></head><body><h1>Archive</h1><ul>'+cards+'</ul></body></html>',encoding='utf-8')
-          print(json.dumps({'processed':len(records),'skipped':skipped},ensure_ascii=False))
+          (ARCHIVE/'index.json').write_text(json.dumps({'records':manifests,'errors':errors},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          cards=''.join(f'<li><a href="{html.escape(x["slug"])}/">{html.escape(x.get("date",""))} {html.escape(x.get("title",x["slug"]))}</a></li>' for x in reversed(manifests))
+          (ARCHIVE/'index.html').write_text('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>Archive</title></head><body><h1>Archive</h1><ul>'+cards+'</ul></body></html>',encoding='utf-8')
+          print(json.dumps({'processed':len(records),'errors':errors},ensure_ascii=False))
+          if errors: raise SystemExit(1)
           PY
       - name: Commit archive output without deleting inbox
         run: |
@@ -144,7 +202,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- archive
           if ! git diff --cached --quiet; then
-            git commit -m 'archive: process HTML-first zip inbox'
+            git commit -m 'archive: process ZIP inbox with generated HTML fallback'
             git push origin HEAD:${{ github.ref_name }}
           fi
       - name: Retain inbox until deployment verification
