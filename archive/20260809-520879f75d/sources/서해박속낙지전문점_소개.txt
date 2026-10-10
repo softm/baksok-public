@@ -1,0 +1,129 @@
+■ 사이트
+    1. softm.net
+    2. hoonedu.com, eduhoon.com
+    3. baksok.com
+
+검색엔진
+    네이버      http://submit.naver.com
+    다움        http://submit.naver.com
+    야후        http://submit.naver.com
+    구글        http://submit.naver.com
+    파란        http://submit.naver.com
+    엠파스      http://submit.naver.com
+    MSN 코리아
+
+■ 도메인
+    박속낙지 : baksok.com,co.kr,net
+    훈에듀   : hoonedu.com,co.kr,kr,net
+    에듀훈   : eduhoon.com,co.kr,kr,net
+    소프트엠 : softm.net
+
+    ※ 도메인 등록
+        ● hoonedu.com
+            제목 : 무료교육
+            설명 : 무료 교육, 문제풀이, 분석, 평가
+            분류 : >교육,참고자료>초중고교육>교육,학습자료
+
+        ● baksok.com
+            제목 : 박속낙지
+            설명 : 박속낙지,박,어리굴젓 판매 - 싱싱한박과 큼직한 낙지의 은은한 어울림
+            분류 : >생활,가정>음식,요리
+
+        ● softm.net
+            제목 : 내마음이 머무는곳
+            설명 : php,flex
+■ 메타 태그
+    <HEAD>
+    <title>타이틀 작성</title> ==> 실제로 타이틀 빼먹는 분들이 많은데 검색엔진에서는 중요합니다.
+    <meta name="robots" content="ALL">  ==> 로봇이 다 긁어갈수 있게 설정
+    <meta name="keywords" content="검색 키워드">  ==>> 검색엔진에 걸릴수 있는 키워드 설정
+    <meta name="Subject" content="검색엔진 노출 제목"> ==>> 검색엔진에 노출되는 요약 제목
+    <meta name="description" content="이사이트에 가면 무엇이 있다!"> ==>> 제목과 더불어 서술되는 내용 요약입니다.
+    <meta name="author" content="또다른 요약 설명"> ==> 안쓰는 분들도 많은데 쓰시는게 좋습니다.
+    <meta name="writer" content=" mong">  ==>> 만든 사람인데 ^^ 외국인을 위해 영어로 하는 센스!  실제 영어로 하면  알렉사에서 볼때 나오는경우도 있습니다.
+    <meta name="copyright" content="&copy; 2007 뉴스지기.com Inc.">  ==> 회사이름이죠 ^^
+    <meta name="reply-to" CONTENT= help @naver.com>
+    <meta name="content-language" content="kr">  ==>> 언어 설정 빼먹지 마세요!
+    <meta name="build" content="2006. 07. 06"> ==> 갱신일인데요!  수정할때마다 갱신일을 바꿔주면 로봇이 새로 긁어간답니다.
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">  ==>> 역시 언어설정
+    <meta http-equiv="Cache-Control" content="No-Cache"> ==>> 이줄을 포함한 아랫줄 까지가 웹페이지 캐쉬 부분인데요. 노캐쉬로 설정해놓으면 갱신이 빠릅니다.   즉.. 웹페이지가 유동적이다면 노캐쉬로 설정해놓아야 하며  좋은점은 인덱스 페이지 리딩이 무척 빨라진다는 것입니다.
+    <meta http-equiv="Pragma" content="No-Cache">
+    </HEAD>
+
+■ softm.net
+    <head>
+    <title>웹프로그래머 PHP,FLEX,JSP,VB,파워빌더</title>
+    <meta name="robots" content="ALL">
+    <meta name="keywords" content="Php,Java,VisualBasic,C#,C,XML,DHTML,XForm,ASP,PowerBuilder,Flex,Linux,팁,네트웍,Flex정리,디자인보드(dboard),데이터 베이스,SQL문,Mysql,Informix,Oracle,데이터베이스(그외),컴퓨터구조,프로그램언어,정보보호/보안,전자상거래보안,침입탐지시스템">
+    <meta name="description" content="Php,Java,VisualBasic,C#,C,XML,DHTML,XForm,ASP,PowerBuilder,Flex,웹서버 활용 팁 Tip">
+    <meta name="author" content="kim ji hoon - softm">
+    <meta name="writer" content="kim ji hoon">
+    <meta name="copyright" content="softm">
+    <meta name="reply-to" CONTENT= softm@nate.com>
+    <meta name="content-language" content="kr">
+    <meta name="build" content="<?=date("Y")?>.<?=date("m")?>.<?=date("d")?>">
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    </head>
+
+■ baksok.com
+    <head>
+    <title>서해박속낙지</title>
+    <meta name="robots" content="ALL">
+    <meta name="keywords" content="낙지,박속,낙지탕,어리굴젓,광명,서해박속낙지,음식점,칼국수,볶음밥,신선한 음식">
+    <meta name="description" content="박속낙지,박,어리굴젓 판매 - 싱싱한박과 큼직한 낙지의 은은한 어울림">
+    <meta name="author" content="kim ji hoon - softm">
+    <meta name="writer" content="kim ji hoon">
+    <meta name="copyright" content="softm">
+    <meta name="reply-to" CONTENT= softm@nate.com>
+    <meta name="content-language" content="kr">
+    <meta name="build" content="<?=date("Y")?>.<?=date("m")?>.<?=date("d")?>">
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    </head>
+
+가장중요한것은 의문의 여지 없이 홈페이지 내용이 좋아야 할 것입니다.
+
+유용한 정보를 제공해 주는 홈페이지,
+
+도움이 되는 정보를 제공해 주는 홈페이지가 한번노출되면 입소문마케팅 효과로인하여 이용자가 늘고, 검색엔진이 선호하는 것은 당연한 얘기입니다.
+
+왜냐햐면 좋은 정보를 검색결과에서 보여 주는 검색엔진이 사용자에게 사랑받을 테니까요.
+
+
+
+Java
+VisualBasic
+C#
+C
+Php
+XML
+DHTML
+XForm
+ASP
+PowerBuilder
+Flex
+
+■ 할일
+    사이트 메타 태그 적용
+    서해박속낙지
+        - 사이트 구성에 필요한 자료 준비
+                --> 사진 찍기
+    훈에듀
+        - 사이트 기획
+        - 사이트 디자인
+        - 사이트 프로그램
+
+■ 위치 정보
+    1. 지하철 7호선 광명사거리역하차 6번 출구
+    2. 광명사회복지관에서 30M ( 천왕동 방면으로 300M )
+    - 약도
+        http://www.whereis.co.kr/maplink/80922937157
+
+■ 홍보방법
+    1. 검색엔진 등록
+    2. 네비게이션 맵등록
+    3. 카페, 블로그 활용
+        -> html 광고 페이지 디자인 필요

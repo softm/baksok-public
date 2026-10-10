@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "id": "20260809-520879f75d",
+  "slug": "20260809-520879f75d",
+  "date": "2026-08-09",
+  "title": "서해박속낙지 여름휴업 안내문 채팅정리",
+  "input": "20260809_서해박속낙지_여름휴업_안내문_채팅정리",
+  "inputKind": "folder",
+  "inputSha256": "520879f75d13006afc7ef1b7ce9174dc9ba7037d3201552ed0ce9b02f00a6be2",
+  "entrySource": "index.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "b3cfcbcaf380821103d57b4b9d6fc755f99aaac0cd44309a2fc76ef09f978abf",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3654,
+      "sha256": "ffc64699e38ba5d7ec2795b4f623eb6a76571c1efa928ef7c90ece20cf23fb9b"
+    },
+    {
+      "path": "images/01_여름휴업_가로형.png",
+      "size": 1013684,
+      "sha256": "febf0a68440f316f675327e48f3dcf0f922fbb9fbdbb3d03167e68e899f136e5"
+    },
+    {
+      "path": "images/02_여름휴업_정사각형.png",
+      "size": 393445,
+      "sha256": "4afc0a49f9e639f98016a714e0b96274a65efa828cb177358d5eda32b25c34a2"
+    },
+    {
+      "path": "images/03_2024_여름휴업_과거안내.png",
+      "size": 552048,
+      "sha256": "5f7e4b5939b83b105ee00b99a89f410f6a6bf94f7cdfc4b80a13689abcfc057f"
+    },
+    {
+      "path": "images/04_최종_A4_문자안내_미리보기.png",
+      "size": 107096,
+      "sha256": "01a4b71a32c54605a4644b577c7cf03184e4d7396bdb6fae72fb326700936d48"
+    },
+    {
+      "path": "images/05_초안_A4_안내문_미리보기.png",
+      "size": 102672,
+      "sha256": "70f96a46bd2840ddbfa09d3c34ba11b01463a681926256824530bf6d7242c499"
+    },
+    {
+      "path": "index.html",
+      "size": 9647,
+      "sha256": "b3cfcbcaf380821103d57b4b9d6fc755f99aaac0cd44309a2fc76ef09f978abf"
+    },
+    {
+      "path": "pdf/20260809_서해박속낙지_여름휴업_문자안내_A4.pdf",
+      "size": 29742,
+      "sha256": "b7729b710e58f9df882ecb0d446e896a8e8aa651828f6c71a35f983b58c4a001"
+    },
+    {
+      "path": "pdf/20260809_서해박속낙지_여름휴업_안내문_A4.pdf",
+      "size": 56561,
+      "sha256": "cfa9d201ea2fd131b64044d35f7a99f35ebf2097510a5875923f004bc87c60a9"
+    },
+    {
+      "path": "sources/사이트정보_박속낙지.md",
+      "size": 7712,
+      "sha256": "f4f5d42f509cc1ef9daf3fc4f576ee2d5f86117680e77b52fb5e25d29588de24"
+    },
+    {
+      "path": "sources/서해박속낙지_운영준비.md",
+      "size": 3136,
+      "sha256": "1a7f94b62d0f6149b39d8b39edd511ed6aa3148e6b448041ce6c957748e77a63"
+    },
+    {
+      "path": "sources/서해박속낙지전문점_소개.html.pdf",
+      "size": 365971,
+      "sha256": "792a3d0c7aca0c78bc2f9333e45899d80f52a4911869b88bb2c9f3c17dfa6d60"
+    },
+    {
+      "path": "sources/서해박속낙지전문점_소개.txt",
+      "size": 6117,
+      "sha256": "a74e83db73736f5a8b6698a9868754c4b3c50e08264e21f80feced2e727cc085"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "id": "20260929-fb599d4310",
+  "slug": "20260929-fb599d4310",
+  "date": "2026-09-29",
+  "title": "서해박속낙지 광진소파 스툴 제작완료",
+  "input": "20260929_서해박속낙지_광진소파_스툴_제작완료",
+  "inputKind": "folder",
+  "inputSha256": "fb599d4310b5a1b66f99da48526695b3c5b1ce6b83845466daa9dd65f1b80dda",
+  "entrySource": "index.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "d862c84f64768aac75d2794fc5555333436cae0324c6a9408e9fb829b56cc27c",
+  "files": [
+    {
+      "path": "20260929_164216.jpg",
+      "size": 109696,
+      "sha256": "457529c3beb07c1c62c58ea84968ea2e80224f660a4af71e0376d19c5da1a9c0"
+    },
+    {
+      "path": "20260929_164219.mp4",
+      "size": 306292,
+      "sha256": "3e081785c5637fa9ca7916f59f9cd3dcccdf50a6d7d53e6539a9bd1d74b0828f"
+    },
+    {
+      "path": "20260929_164219_web.mp4",
+      "size": 1122486,
+      "sha256": "d850cf3cdc7d4a61830ea681ea0db04e83f46b1df899f460e204a9fd742de9d1"
+    },
+    {
+      "path": "20260929_164230.jpg",
+      "size": 129731,
+      "sha256": "a4b5ac00cd5718d778a5dacbe4ca95815488acbbbf6640d351960adfcc52560c"
+    },
+    {
+      "path": "20260929_172550.jpg",
+      "size": 86771,
+      "sha256": "1fa335bd7ff7c48897cb5e4a97a719e2cd5ceebc5d4b0f4f2c24ffe7c45ce041"
+    },
+    {
+      "path": "20260929_172557.jpg",
+      "size": 112014,
+      "sha256": "f5a0ea9dca3da6a2eeeedd9d76b41340c97ab09ed2c82eed90a9ac65e7693bc6"
+    },
+    {
+      "path": "20260929_172600.mp4",
+      "size": 136281,
+      "sha256": "32ea9e7d3053fb15437c404c35fbf5e0fa7b57a1389c9bc4d0d066f4ae230fa6"
+    },
+    {
+      "path": "20260929_172600_web.mp4",
+      "size": 93,
+      "sha256": "8bf6588ead41792c9afb0e00ed4b6155b3c30c5544c7cffb53f99e1d8e4e32dd"
+    },
+    {
+      "path": "20260929_서해박속낙지_광진소파_스툴_제작완료.md",
+      "size": 1905,
+      "sha256": "744016fce54015afc41bd1b62e9986250e022f1a1a026d683e0cd1fc04273885"
+    },
+    {
+      "path": "archive.json",
+      "size": 1139,
+      "sha256": "b179dde74ea4bee5d5c342f017e3cf1e5f5340f8a2766873e02a07beaf60eba3"
+    },
+    {
+      "path": "index.html",
+      "size": 6743,
+      "sha256": "d862c84f64768aac75d2794fc5555333436cae0324c6a9408e9fb829b56cc27c"
+    }
+  ]
+}

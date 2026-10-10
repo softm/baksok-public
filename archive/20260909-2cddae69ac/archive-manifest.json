@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "20260909-2cddae69ac",
+  "slug": "20260909-2cddae69ac",
+  "date": "2026-09-09",
+  "title": "서해박속낙지 이가구 가스설비 사진포함",
+  "input": "20260909_서해박속낙지_이가구_가스설비_사진포함",
+  "inputKind": "folder",
+  "inputSha256": "2cddae69acd9b691aa27e84fead32dff44dbcc7fd8a8da0ccf8da34d71afaa47",
+  "entrySource": "index.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "781ef49f24a7a40fb541242744e4b1ca5a3e801d39f3d337baeeabdc448e0c7d",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 1951,
+      "sha256": "05aaa6b1ef105b75fde2305c8819a628e3a1886fe3a67ef64e40716a13b16317"
+    },
+    {
+      "path": "images/01_이가구_견적서.jpg",
+      "size": 210665,
+      "sha256": "d214f3f2f3ec0b5b086fb9e499cbf0e97eb9e0cb471561e62819e37ec3c0b2f7"
+    },
+    {
+      "path": "images/02_테이블_내부구조.jpg",
+      "size": 263970,
+      "sha256": "6eb9e55cbd059dc8d8888f0813495bc2db416b50f6467fd74f72071805573b51"
+    },
+    {
+      "path": "images/03_의자_샘플.jpg",
+      "size": 334739,
+      "sha256": "d38027a737947ba93fbe6186a8601e6429707d85a822f4e507594b799c76ca2e"
+    },
+    {
+      "path": "images/04_테이블_프레임.jpg",
+      "size": 269392,
+      "sha256": "b70cff982d8699b6ed2bf3de54f67caad89323793ffaac093e31f0791de47250"
+    },
+    {
+      "path": "images/05_테이블_프레임_적재.jpg",
+      "size": 382995,
+      "sha256": "0bd3829efd95eef0bc454de0d24ea4299d49c4ff749961374086ada919cbabb5"
+    },
+    {
+      "path": "images/06_의자_포장.jpg",
+      "size": 220124,
+      "sha256": "0f47d25c266ff108326f84374ccc05724429b7e4a88f2f18ee739ffce9bbd56b"
+    },
+    {
+      "path": "images/07_RIR4000S_상품화면.jpeg",
+      "size": 154589,
+      "sha256": "98051abbacfc1fe0c73bfc048673a97ab79fc2d282ac5f67d98d022409296570"
+    },
+    {
+      "path": "index.html",
+      "size": 2452231,
+      "sha256": "781ef49f24a7a40fb541242744e4b1ca5a3e801d39f3d337baeeabdc448e0c7d"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "id": "20261005-dab72ba864",
+  "slug": "20261005-dab72ba864",
+  "date": "2026-10-05",
+  "title": "서해박속낙지 명함디자인 정리 모든이미지포함",
+  "input": "20261005_서해박속낙지_명함디자인_정리_모든이미지포함",
+  "inputKind": "folder",
+  "inputSha256": "dab72ba8647945a98be44a7187dfe2c28616646ca1c66635ceb27741f22f136d",
+  "entrySource": "서해박속낙지_명함디자인_정리.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c",
+  "files": [
+    {
+      "path": "images/01_방송로고_KBS2TV생생정보로고_로고파일.jpg",
+      "size": 196150,
+      "sha256": "4d2fd7460a32af92532e023bb84a56f13bd59a29effca5360a21acd4c7197c6b"
+    },
+    {
+      "path": "images/01_서해박속낙지_명함_약도.png",
+      "size": 1131492,
+      "sha256": "43abc5088a6eeb07be89133b5d0f96155501699cd2d4f021f87620da4c2d705c"
+    },
+    {
+      "path": "images/1f07a6a1-082e-4998-ba7e-033d57ed308a.png",
+      "size": 284457,
+      "sha256": "e89d544324fc303e61d12a29a3b3a40fe1008508e087f1c267cc348f07c57a63"
+    },
+    {
+      "path": "images/4df6a38a-e46b-48c9-96c3-021215ed186e.png",
+      "size": 85451,
+      "sha256": "3b47e94705fb1ac9ea79a9efe11e0be752f8c72db9797165225cb3de2bf7d06c"
+    },
+    {
+      "path": "images/5f9b43a4-0071-4df9-a14c-e134e91dd766.png",
+      "size": 38674,
+      "sha256": "4c3a06d5cc6ee0b8e022343cd154b463836e13c99e97af0e69f988a8ed2ed20c"
+    },
+    {
+      "path": "images/987560db-75d0-4dc3-b82d-3d5d573dd8dd.png",
+      "size": 607839,
+      "sha256": "8a399792b4d75f33356da1f71458a91e316c0f8099965e4325ce192a31400db6"
+    },
+    {
+      "path": "images/a_2d_digital_map_in_korean_provides_directions_to.png",
+      "size": 1992910,
+      "sha256": "45e050b0db7da77c23ce1614bb1e776e35da0b4e3a0c988ffcbfb7826191e956"
+    },
+    {
+      "path": "images/a_business_card_design_for_서해박속낙지전문_a_restauran.png",
+      "size": 2245984,
+      "sha256": "d2d9f1af06ed5901d742f1df34949c9887175b6acb14a670b36d8b4ec04ee102"
+    },
+    {
+      "path": "images/a_business_card_for_a_korean_restaurant_named_서해박.png",
+      "size": 1498676,
+      "sha256": "354ec3dfc589e45b5b73eb98e4a234be8626f0fe23bf013d7973873097b4c6e3"
+    },
+    {
+      "path": "images/a_business_card_for_a_korean_restaurant_specializi.png",
+      "size": 2415182,
+      "sha256": "885c6d680b02adab64a3f7800ceac74c6c7167c0a171b062c1a2173960387739"
+    },
+    {
+      "path": "images/a_business_card_for_서해박속낙지전문_seohae_baksok_nakj.png",
+      "size": 2297112,
+      "sha256": "ae775448c50aa81fc88e32f5c3b5ee7afbcb09cbc1d7fffb67d2472723f50b28"
+    },
+    {
+      "path": "images/a_map_image_features_directions_to_서해박속낙지전문_seoha.png",
+      "size": 1918420,
+      "sha256": "149044ffb1cbbcc464f44c7ab130cd16a6e263055d2c31df13d685811b729e7e"
+    },
+    {
+      "path": "images/a_map_in_korean_provides_directions_to_서해박속낙지전문.png",
+      "size": 1795372,
+      "sha256": "eb953065855b11d7acb4b3a744d789c59394b0e40d24bbeb3c98e854e94979be"
+    },
+    {
+      "path": "images/c4f4ffe4-47a8-4788-b747-5000c64195e7.png",
+      "size": 2586671,
+      "sha256": "ce64f133ea1a253d1397f4e4705c3b4b70c1781bade400c09910d6e2671209ea"
+    },
+    {
+      "path": "images/간판_박속낙지.jpg",
+      "size": 177605,
+      "sha256": "2015b47e49d20189530f3dfd59143f79a0332aab279cdaa90f8ece2ace030110"
+    },
+    {
+      "path": "images/백반기행_로고.png",
+      "size": 70686,
+      "sha256": "c469ba6ef7e717f4c106bdd3f257f79a5da4ca3ac496c6c6e451375d093e5fbc"
+    },
+    {
+      "path": "index.html",
+      "size": 6995,
+      "sha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c"
+    },
+    {
+      "path": "서해박속낙지_명함디자인_정리.html",
+      "size": 6995,
+      "sha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c"
+    },
+    {
+      "path": "서해박속낙지_명함디자인_정리.md",
+      "size": 4835,
+      "sha256": "58eefab29a78d0c52fc7ca96632c9217d810982e9bfa8efdec6abf0866ff3b4e"
+    }
+  ]
+}

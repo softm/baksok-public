@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "id": "20260911-rir4000s",
+  "slug": "20260911-rir4000s",
+  "date": "2026-09-11",
+  "title": "서해박속낙지 RIR4000S 배송 배포 통합정리 모든이미지",
+  "input": "20260911_서해박속낙지_RIR4000S_배송_배포_통합정리_모든이미지",
+  "inputKind": "folder",
+  "inputSha256": "3a19048085b939d56a1428c8f9597ed8db4d96f3a6d02ad771af43a467a9480b",
+  "entrySource": "index.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "6283ed1502a005db5d463683228efeade78488c530023af7d71fccb535be343b",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 7221,
+      "sha256": "5f7c3927dc4521d0788c018c4be55de6a0d25c2b42dec3c30de367d9d93b24f1"
+    },
+    {
+      "path": "index.html",
+      "size": 13374,
+      "sha256": "6283ed1502a005db5d463683228efeade78488c530023af7d71fccb535be343b"
+    },
+    {
+      "path": "manifest.json",
+      "size": 905,
+      "sha256": "add435632ff1aa4977bc893493fb2ef82ba369ad856857ef9d82d8c259122ca2"
+    },
+    {
+      "path": "media/20260910_171012.jpg",
+      "size": 322439,
+      "sha256": "8108e7d7efe8052d457df206423dd7bd68c8f8572d13117b68474950a50a5687"
+    },
+    {
+      "path": "media/20260910_171117.jpg",
+      "size": 269928,
+      "sha256": "277c15cb29434c26b76b813d0b6f7bf32c32ded21b306d25d56ced7687726b27"
+    },
+    {
+      "path": "media/20260910_171150.jpg",
+      "size": 334232,
+      "sha256": "83521bce3061ef92c514f6b02f01fff141e24d0bcf5547e35180676e8ffbbbf4"
+    },
+    {
+      "path": "media/20260910_171311.jpg",
+      "size": 249175,
+      "sha256": "77fed605f473940c934a6c98e00fb97ab8c21d67169c84ee3a3c7774da2f96e8"
+    },
+    {
+      "path": "media/20260910_171317.jpg",
+      "size": 277306,
+      "sha256": "95eb6537402367e6379257d431751e0b783eb10fb170997512d1638b0e137583"
+    },
+    {
+      "path": "media/20260910_171631.jpg",
+      "size": 221949,
+      "sha256": "bb2ac9e8b5f10c561010014b2fdd8e059799d276e60dfe85edd7b59a3ded9a74"
+    },
+    {
+      "path": "media/20260910_171634.jpg",
+      "size": 228756,
+      "sha256": "40f08656f690fa9f45f710a1ed69b0da113f48ce55d4640da4a990ac32e6b0e2"
+    },
+    {
+      "path": "media/20260910_171741.jpg",
+      "size": 233380,
+      "sha256": "5d41bb893d04e305dad1407423bee645690ab4333f7957dfd62f8e447491a1b5"
+    },
+    {
+      "path": "media/20260910_171743.mp4",
+      "size": 9231367,
+      "sha256": "9c357a10d9a5cea9f4eb867840eee96c58e66d8164a15d0a28aee942351d0a86"
+    },
+    {
+      "path": "media/340466ea-b955-46d2-b10e-516d9ca5c4df.png",
+      "size": 297961,
+      "sha256": "4b0ad131675107b46680a2fd2ac16860602b06fe4fd9cb32dececddb3d783f5f"
+    },
+    {
+      "path": "media/7cce484d-39eb-4bac-b6cb-3dbc7f20b84a.png",
+      "size": 355624,
+      "sha256": "fb471cc89caa203ed66337e2157050f319c6872eec1aa7aa2c889cc6f35b0595"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-17 001.jpeg",
+      "size": 773094,
+      "sha256": "36a7549b95fd168712182dc072c91c7e3bfeaa376911d37525f59ef269870dec"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-17 002.jpeg",
+      "size": 811995,
+      "sha256": "2022c38e050e7d3e77f359fa2a68f61fabeb7a8940992e602dac6c0405f41807"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-17 003.jpeg",
+      "size": 465939,
+      "sha256": "c3e5460e590cbc22513aac8c8e283dbbc96cda9bff6008d9ce24346c929f568b"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-18 004.jpeg",
+      "size": 1016131,
+      "sha256": "beaab40d0159fab3e0f8d0db50aec20fba5a052b96fc4fed4fe6f20e40f5f67c"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-18 005.jpeg",
+      "size": 767807,
+      "sha256": "efe006f92cd70104043e96595510e58c9ae874368f92918ae6e73ac98e277c9b"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-18 006.jpeg",
+      "size": 434039,
+      "sha256": "f558965af45981c2fd16b2e6d7cfbd4857108681e24ae517a80beac10afe7026"
+    },
+    {
+      "path": "media/KakaoTalk_Photo_2026-09-14-10-55-18 007.jpeg",
+      "size": 513726,
+      "sha256": "87feda4730ac332c537f6b9022200979a71798b5e8dd5a563c31ba22df4d1e4e"
+    },
+    {
+      "path": "media/Scan_20260910_171808.jpg",
+      "size": 235790,
+      "sha256": "88318be44fda85975b9040e44556b89bcca7f3acf27b6efcf1aeba8a27397020"
+    }
+  ]
+}

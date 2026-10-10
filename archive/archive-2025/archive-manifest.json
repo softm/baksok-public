@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 2,
+  "id": "archive-2025",
+  "slug": "archive-2025",
+  "date": "",
+  "title": "2025 서해박속낙지 전면유리 박배경 디자인자료",
+  "input": "2025_서해박속낙지_전면유리_박배경_디자인자료",
+  "inputKind": "folder",
+  "inputSha256": "8eeacb68769db856a1d8bf543638e60e787cd03caaaf90ff1e8ebebe11f80906",
+  "entrySource": "서해박속낙지_전면유리_박배경_디자인자료.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d",
+  "files": [
+    {
+      "path": "images/20190728_093556_박.jpg",
+      "size": 774747,
+      "sha256": "70d3a6a07660258f9c16ac2a36bfdf3fccf16d2d4c07c3f700fc02538491ed35"
+    },
+    {
+      "path": "images/20190728_101549_박.jpg",
+      "size": 757314,
+      "sha256": "06f98cc60044c8ba4bdb862a00c0d0724e77bbccd031ba6059ae6ecace224d3b"
+    },
+    {
+      "path": "images/20190728_101646_박.jpg",
+      "size": 769228,
+      "sha256": "f0514d8d43b8dc61c5d49b8a8d3f6186b1b56fd7eb863b4760ba30c05c1dd792"
+    },
+    {
+      "path": "images/20190728_101705.jpg",
+      "size": 784859,
+      "sha256": "7447a85c0e343aeedbd339c96de9b979904ab5e00a1bd41578e0e231e7da0e5a"
+    },
+    {
+      "path": "images/20190728_101716.jpg",
+      "size": 794392,
+      "sha256": "3677bb776d4affedc29bfcabc9a120894c0bc0d9c42d0c3ef1ee7ad72ff9d01d"
+    },
+    {
+      "path": "images/20190728_102708_박.jpg",
+      "size": 978421,
+      "sha256": "1f22f3b726ac60eae7bf77c59aa8fe5cb4de9587506eb20c795a9ad128a93586"
+    },
+    {
+      "path": "images/20190728_102740_박.jpg",
+      "size": 1229601,
+      "sha256": "5645d3dd9ded8b912e9ef71be7da392b782d8103d9fe2846590489ffb0a25b33"
+    },
+    {
+      "path": "images/20190728_111740_박.jpg",
+      "size": 808193,
+      "sha256": "118ed0325cd3eae5fc70a38aec466244ddf7bb99d1368964d73d455c59a0930c"
+    },
+    {
+      "path": "images/20190728_111747_박.jpg",
+      "size": 762352,
+      "sha256": "5b7519e2031ee8193b2b5f75133d066b02fa65f1c236b64c42bc5f8f58d660c3"
+    },
+    {
+      "path": "images/20190728_113249_박.jpg",
+      "size": 848041,
+      "sha256": "81bb0e09e3c8c6c0e4fb0e6e08455da5c45ee70db4b81ff6570286c17740c6c6"
+    },
+    {
+      "path": "images/20190728_113253_박.jpg",
+      "size": 782207,
+      "sha256": "0f3ff7ec154ba3ba6974ecb74fb4c2e51af857a19d1f4e86da9190b322d1fa0d"
+    },
+    {
+      "path": "images/20190728_113323_박_pick.jpg",
+      "size": 895595,
+      "sha256": "23dae7ced810d8040fdedc017e96d1c053563f82bad03c3100056cd501e88980"
+    },
+    {
+      "path": "images/20190728_113329.jpg",
+      "size": 961411,
+      "sha256": "78515480f870e336887ee3fa741e178390f504546544025a76bceeeac25207a4"
+    },
+    {
+      "path": "images/20230731_184209.jpg",
+      "size": 596366,
+      "sha256": "fc0685c6e4a29b3bf3c1a3cb86cc0b422ed8327986aef42002667b182884fc7e"
+    },
+    {
+      "path": "images/20230731_184214.jpg",
+      "size": 565507,
+      "sha256": "0067e48b0799c9a51ea6278bd9f806d0b98aa180ceee033fae7dfcd65947352d"
+    },
+    {
+      "path": "images/20230731_191108.jpg",
+      "size": 418814,
+      "sha256": "c6dd73b7146af74dc7d8a11c20ad0812ad1ca341edacbedad18b04b9cc6d656b"
+    },
+    {
+      "path": "images/20230731_191138.jpg",
+      "size": 398959,
+      "sha256": "ed12f50f055aee6342d1aac790c12aa2764cf99c3cb7cbb256103ca2106f20cc"
+    },
+    {
+      "path": "images/20230731_191322.jpg",
+      "size": 377819,
+      "sha256": "1ce2179fa0773accf85802aee0ff84044042ceb43c982ec8ac0c09c2fd4840f2"
+    },
+    {
+      "path": "images/20230731_191351.jpg",
+      "size": 405609,
+      "sha256": "72b2b9759f17da741a2be1bbd04eb596444bb154803a5f4c90d8ae70c8a16ced"
+    },
+    {
+      "path": "images/20240723_140008.jpg",
+      "size": 1165727,
+      "sha256": "a6b0b0ddd1be326b1abbe691848c46adbbfaf83ac18c16ae43347ed3df822afb"
+    },
+    {
+      "path": "images/20240723_140059.jpg",
+      "size": 811600,
+      "sha256": "9e32b4e1b82ff8727daf109a32238386e7aa125914e83e14ba6b7fe6d38ac58f"
+    },
+    {
+      "path": "images/20240723_162208.jpg",
+      "size": 764454,
+      "sha256": "308e1cc24e9328abc1986918380e49b9fd51e0cd00531a59ac41c6153cf52a50"
+    },
+    {
+      "path": "images/20240723_162226.jpg",
+      "size": 967771,
+      "sha256": "53c1f2346fac79fbb4b6f783ac6fadf7380f47952a761d1946e11e3c7cbad823"
+    },
+    {
+      "path": "images/20240723_162404.jpg",
+      "size": 1011359,
+      "sha256": "9ed1034a57f0f1ad9694233cded1f013ed5da0e0d1b69c95b68ecf8cda926497"
+    },
+    {
+      "path": "images/20240723_162447.jpg",
+      "size": 1300317,
+      "sha256": "8352204a0ccee5e2025659bee03490343680ede749f8375fb5952c16a7b46c0e"
+    },
+    {
+      "path": "images/20240723_162453.jpg",
+      "size": 1040366,
+      "sha256": "824fe5c67bfc692f3fba13e724e5f73ad833df3d1a5076f8f7bc1d97fc6984a3"
+    },
+    {
+      "path": "images/20240723_162547_pick.jpg",
+      "size": 1290092,
+      "sha256": "ba9059eb2f52a19b8e04348785515760d51147018295934ae4fa6d8d12036c02"
+    },
+    {
+      "path": "images/20240723_162604.jpg",
+      "size": 1049494,
+      "sha256": "820e859b010bbe483b15c79a1cb98c22a5da426e52eb9bb859ee2a7659a6a9e9"
+    },
+    {
+      "path": "images/20240723_162624.jpg",
+      "size": 940986,
+      "sha256": "2272ee62c80e1ffa46e6f4b4e765b1a31128366435297eab3e0360b94d204f67"
+    },
+    {
+      "path": "images/20240723_162626.jpg",
+      "size": 911072,
+      "sha256": "6b69453ef16e5178c62dcbeff87a5580f2e61ab5d197c83a58e5e8d055d504ca"
+    },
+    {
+      "path": "images/20240723_162728_덩굴손.jpg",
+      "size": 1101990,
+      "sha256": "c95af7e13c82c86af1639db7ed87667dfed07682fda7cc7d99a2822228e2f8eb"
+    },
+    {
+      "path": "images/20240723_163011_김.jpg",
+      "size": 410109,
+      "sha256": "a40462a5f2e83beed56b0e3d3ee4850270ea6a71d93a8fbe5d86ebefdb676073"
+    },
+    {
+      "path": "images/20240723_181018_꽃.jpg",
+      "size": 497128,
+      "sha256": "b6ffc1d98bb00e505aa84e164dd8987242a167811b3d9039dd79260e352d5802"
+    },
+    {
+      "path": "images/20240723_181039_꽃.jpg",
+      "size": 883560,
+      "sha256": "6a20e8d9dc0954726ea82a0c9ad56a9ee4936422cd40703c162f003d46ab65a5"
+    },
+    {
+      "path": "images/20240723_195022_꽃.jpg",
+      "size": 522493,
+      "sha256": "d469aff1dff5aad70c7b7a0bd755f5f89229b0b7631811bc9b84ada0ae2bb117"
+    },
+    {
+      "path": "images/20240723_195031.jpg",
+      "size": 492518,
+      "sha256": "310eecf92fbe0834cdb02aecb7e5044ba914b00d2be18ae31c87f9cfc8359365"
+    },
+    {
+      "path": "images/20240723_195148.jpg",
+      "size": 754417,
+      "sha256": "08e80f71c3d0e7025eaff6e0f253458fd7cd865c990b8adf6e4891e8422b5835"
+    },
+    {
+      "path": "images/20240723_195302.jpg",
+      "size": 629051,
+      "sha256": "ce8d85779b20677a81e823f6c40af5eabc0e6031ae79e07efd2bfca458b16b37"
+    },
+    {
+      "path": "images/20240723_195320.jpg",
+      "size": 719330,
+      "sha256": "971a1423b4e866e2652c0092060b3990ef5f929c0d588c82db6b58315555797f"
+    },
+    {
+      "path": "images/20240723_195703.jpg",
+      "size": 515026,
+      "sha256": "4c09ba1444d66c54ad4506374c2c660b36bc78e76a3aa6d4d8802290e8db7d5b"
+    },
+    {
+      "path": "images/20240723_195720.jpg",
+      "size": 513532,
+      "sha256": "c5f9305e902c8e5d09eb3ca54164b0a7d8b91cd38498edff74dc4821752aa867"
+    },
+    {
+      "path": "images/20240723_195721.jpg",
+      "size": 448349,
+      "sha256": "a1837263f7d6afff8da0d003f9017b03c128b4f5f398f70b5e91d419b6ac4e62"
+    },
+    {
+      "path": "images/20240723_195726.jpg",
+      "size": 601979,
+      "sha256": "660b618d880083e3c9abe46cabe631aedc566cc2be8029d85840bb85ab99b3c4"
+    },
+    {
+      "path": "images/20240723_195737.jpg",
+      "size": 595895,
+      "sha256": "b1011f9359f21bd5f1df0f35b0a2de138ea7486efb9dc42ab427165e4cd28367"
+    },
+    {
+      "path": "images/20240723_195808.jpg",
+      "size": 772211,
+      "sha256": "d8901099666734743c369f6f5578d12e8bcabb5b73d7399c9fbf0f0d2bbe59a8"
+    },
+    {
+      "path": "images/20240723_195814.jpg",
+      "size": 580490,
+      "sha256": "775c5b493790ae3bde9835fcd01c97a8c6fa8bb5a00391b8f625c22da7506604"
+    },
+    {
+      "path": "images/20240723_195834.jpg",
+      "size": 622755,
+      "sha256": "dc6a4739d3ee03d7619988e55cc28a156d497a3b87d455dc1663b306a37593fd"
+    },
+    {
+      "path": "images/20240723_195841_꽃망울_pick.jpg",
+      "size": 680502,
+      "sha256": "f073bb739a3d16309f453d2c6687ecb4bc3376cd9f966b86db694c2aa3d4cfe4"
+    },
+    {
+      "path": "images/20240723_195945_꽃_별_pick.jpg",
+      "size": 686404,
+      "sha256": "83c3751c58979b26b660a252943e5f97ecc44e7aef1b5023c6a01588ae58083d"
+    },
+    {
+      "path": "images/20240723_200007_꽃_별_pick2.jpg",
+      "size": 562997,
+      "sha256": "a020657738be8be6547f843b523827d2d8a126dfa0ca56455bb15c8716d5645a"
+    },
+    {
+      "path": "images/20240723_200016.jpg",
+      "size": 716906,
+      "sha256": "e5d5d24e6f1753daf48cba511a9783a6085ca7298bbcf54fd7c8bba14cd038a4"
+    },
+    {
+      "path": "images/20240723_200042.jpg",
+      "size": 646156,
+      "sha256": "52ac95d53be4de86edf23ffc48aed6477616dccbac4879381abba3191b9769e6"
+    },
+    {
+      "path": "images/20240723_200054.jpg",
+      "size": 583527,
+      "sha256": "18b01503577db99c7f6c20e72c90f9bbf4c778cd15af1efa89a6364a1e42219f"
+    },
+    {
+      "path": "images/20240723_200114.jpg",
+      "size": 580362,
+      "sha256": "a444727b3391639f91af0e0ff696f6a672de8d3c5ee40349e85b96c48c249acb"
+    },
+    {
+      "path": "images/20240723_200130.jpg",
+      "size": 545890,
+      "sha256": "9193a5d674fd215d04a877568daa050d277fb38a9af0bf4ff5d3ba6bdd4e8f09"
+    },
+    {
+      "path": "images/20240723_200137.jpg",
+      "size": 407723,
+      "sha256": "f11b48c06df8c2869c84f846ce45e1e40fbf91ac7a56dbb6bb32dfddd9a296b2"
+    },
+    {
+      "path": "images/20240723_200352.jpg",
+      "size": 433875,
+      "sha256": "81b4f827b7cadbb7b8bbf6cb691fab63b67c6c118ed3699bc7f7f641c0093f6f"
+    },
+    {
+      "path": "images/KakaoTalk_Photo_2024-12-30-16-41-22.jpeg",
+      "size": 421723,
+      "sha256": "09cd7280ab6021fa665dc90fa7d7eb21693a7bb0a150561c820472d3747b1b5b"
+    },
+    {
+      "path": "images/KakaoTalk_Photo_2024-12-30-16-41-29.jpeg",
+      "size": 409539,
+      "sha256": "0e6f55798f7dae240c02572f3d21ea6ef1323970e34c0baae10cd345ac31f86f"
+    },
+    {
+      "path": "images/KakaoTalk_Photo_2024-12-30-16-41-39.jpeg",
+      "size": 889525,
+      "sha256": "e9240954d42c8f95e5081a3bfc5d8744a96db9496c8a72eb17cf71ab1d22591b"
+    },
+    {
+      "path": "images/KakaoTalk_Photo_2024-12-30-16-41-43.jpeg",
+      "size": 775965,
+      "sha256": "8ce0d16222174b79238e638e0ea1a368e6601337117b9e51704efe0e12e59d0a"
+    },
+    {
+      "path": "images/a_high_resolution_digital_photograph_captures_thre.png",
+      "size": 2562563,
+      "sha256": "07a60f30d9254ff65d9e749b1c83770908641604a2cbb9a544f60c00b8c166fa"
+    },
+    {
+      "path": "images/a_high_resolution_digital_photograph_showcases_a_c.png",
+      "size": 2320988,
+      "sha256": "dcd00a5c0a2aeecbbfcfcce6db695c0c2517eaef596f95224c3d640effaf9e6a"
+    },
+    {
+      "path": "images/a_high_resolution_photograph_captures_gourds_with.png",
+      "size": 2191958,
+      "sha256": "4d14cf37fc75d3c76b6ba4b0d2ed1caf1522d3fef3e0ed09010abef77aa89c21"
+    },
+    {
+      "path": "images/a_high_resolution_photograph_taken_during_daytime.png",
+      "size": 2282450,
+      "sha256": "b4bebc254b9e835c676f1aaf4b905f4d407cd53fd92bed96ac41229cf9a3be40"
+    },
+    {
+      "path": "images/a_photograph_captures_a_close_up_view_of_bottle_go.png",
+      "size": 2304200,
+      "sha256": "90822409ce6ee95977d8aaf08156fd9f246570cbe2b5af6860d328f7ead0d7a7"
+    },
+    {
+      "path": "images/a_series_of_nine_large_scale_photographic_panels_o.png",
+      "size": 2665329,
+      "sha256": "b379b6631d0d366a29e53acacb05ff6c957fd44a86c46d1a81bf0f6a57ecba95"
+    },
+    {
+      "path": "images/서해박속닉지_가게_전면_유리_하단_04989878-0b9c-4799-88b7-5b6f6e0ae3d4.jpeg",
+      "size": 556930,
+      "sha256": "0cc71684111ea7d35dc4973cbeebec7d2035dd9f1b3c06d1004a8462c572faa6"
+    },
+    {
+      "path": "images/서해박속닉지_가게_전면_유리_하단_KakaoTalk_Photo_2025-06-10-12-50-14.jpeg",
+      "size": 558112,
+      "sha256": "7a88476771861c5279fef299ab69b861e59dd23a91163401a62015c953ec8b9f"
+    },
+    {
+      "path": "index.html",
+      "size": 14862,
+      "sha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d"
+    },
+    {
+      "path": "서해박속낙지_전면유리_박배경_디자인자료.html",
+      "size": 14862,
+      "sha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d"
+    },
+    {
+      "path": "서해박속낙지_전면유리_박배경_디자인자료.md",
+      "size": 7249,
+      "sha256": "9f9ac47cd96fa8b2302938c49c21284ce35c4af9dffea937459b31feb805d3fd"
+    }
+  ]
+}
