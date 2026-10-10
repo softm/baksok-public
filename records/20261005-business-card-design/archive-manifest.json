@@ -10,7 +10,7 @@
   "inputKind": "folder",
   "inputTreeSha256": "dab72ba8647945a98be44a7187dfe2c28616646ca1c66635ceb27741f22f136d",
   "entrySource": "서해박속낙지_명함디자인_정리.html",
-  "entrySha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c",
+  "entrySha256": "846e3d8e939e2f6a35efb1635795935177a5b92dea2cec700426f6dd7fafddd5",
   "files": [
     {
       "path": "images/01_방송로고_KBS2TV생생정보로고_로고파일.jpg",
@@ -94,13 +94,13 @@
     },
     {
       "path": "index.html",
-      "size": 6995,
-      "sha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c"
+      "size": 6659,
+      "sha256": "846e3d8e939e2f6a35efb1635795935177a5b92dea2cec700426f6dd7fafddd5"
     },
     {
       "path": "서해박속낙지_명함디자인_정리.html",
-      "size": 6995,
-      "sha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c"
+      "size": 6659,
+      "sha256": "846e3d8e939e2f6a35efb1635795935177a5b92dea2cec700426f6dd7fafddd5"
     },
     {
       "path": "서해박속낙지_명함디자인_정리.md",
