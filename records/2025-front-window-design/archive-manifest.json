@@ -10,7 +10,7 @@
   "inputKind": "folder",
   "inputTreeSha256": "8eeacb68769db856a1d8bf543638e60e787cd03caaaf90ff1e8ebebe11f80906",
   "entrySource": "서해박속낙지_전면유리_박배경_디자인자료.html",
-  "entrySha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d",
+  "entrySha256": "c0fe15dc3cc758816f4b81d2e950f3915a68f3797016d34a5d330c88cdba8c43",
   "files": [
     {
       "path": "images/20190728_093556_박.jpg",
@@ -359,13 +359,13 @@
     },
     {
       "path": "index.html",
-      "size": 14862,
-      "sha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d"
+      "size": 14334,
+      "sha256": "c0fe15dc3cc758816f4b81d2e950f3915a68f3797016d34a5d330c88cdba8c43"
     },
     {
       "path": "서해박속낙지_전면유리_박배경_디자인자료.html",
-      "size": 14862,
-      "sha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d"
+      "size": 14334,
+      "sha256": "c0fe15dc3cc758816f4b81d2e950f3915a68f3797016d34a5d330c88cdba8c43"
     },
     {
       "path": "서해박속낙지_전면유리_박배경_디자인자료.md",
