@@ -8,7 +8,9 @@ import html
 import json
 import shutil
 import unicodedata
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -102,9 +104,62 @@ def copy_source(source: Path, target: Path) -> None:
         relative = path.relative_to(source)
         if relative.as_posix() == "archive-manifest.json":
             relative = Path("source-archive-manifest.json")
+        relative = Path(*(normalized(part) for part in relative.parts))
         destination = target / relative
+        if destination.exists():
+            raise ValueError(f"normalized path collision: {relative}")
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(path, destination)
+
+
+def normalize_html(root: Path) -> None:
+    for path in source_files(root):
+        if path.suffix.lower() not in {".html", ".htm"}:
+            continue
+        document = path.read_text(encoding="utf-8")
+        normalized_document = normalized(document)
+        if normalized_document != document:
+            path.write_text(normalized_document, encoding="utf-8")
+
+
+class LocalAssetParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.references: list[str] = []
+
+    def collect(self, attributes: list[tuple[str, str | None]]) -> None:
+        self.references.extend(
+            value
+            for name, value in attributes
+            if name in {"href", "poster", "src"} and value
+        )
+
+    def handle_starttag(self, tag: str, attributes: list[tuple[str, str | None]]) -> None:
+        self.collect(attributes)
+
+    def handle_startendtag(self, tag: str, attributes: list[tuple[str, str | None]]) -> None:
+        self.collect(attributes)
+
+
+def verify_local_assets(root: Path) -> None:
+    archive_root = root.resolve()
+    for page in source_files(root):
+        if page.suffix.lower() not in {".html", ".htm"}:
+            continue
+        parser = LocalAssetParser()
+        parser.feed(page.read_text(encoding="utf-8"))
+        for reference in parser.references:
+            parsed = urlsplit(reference)
+            if parsed.scheme or parsed.netloc or reference.startswith(("#", "/")):
+                continue
+            relative = unquote(parsed.path)
+            if not relative:
+                continue
+            if relative != normalized(relative):
+                raise ValueError(f"non-NFC local asset path: {page}: {relative}")
+            destination = (page.parent / relative).resolve()
+            if not destination.is_relative_to(archive_root) or not destination.exists():
+                raise ValueError(f"missing local asset: {page}: {relative}")
 
 
 def choose_entry(source: Path) -> Path:
@@ -125,11 +180,12 @@ def build_record(source: Path, metadata: dict[str, str]) -> dict[str, object]:
     target = OUTPUT / metadata["slug"]
     entry = choose_entry(source)
     copy_source(source, target)
-    entry_relative = entry.relative_to(source)
+    normalize_html(target)
+    entry_relative = Path(*(normalized(part) for part in entry.relative_to(source).parts))
     if entry_relative.as_posix() != "index.html":
-        shutil.copy2(entry, target / "index.html")
+        shutil.copy2(target / entry_relative, target / "index.html")
 
-    if digest(entry) != digest(target / "index.html"):
+    if digest(target / entry_relative) != digest(target / "index.html"):
         raise ValueError(f"entry HTML changed while copying: {source.name}")
 
     files = [
@@ -149,14 +205,15 @@ def build_record(source: Path, metadata: dict[str, str]) -> dict[str, object]:
         "date": metadata["date"],
         "title": metadata["title"],
         "category": metadata["category"],
-        "input": source.name,
+        "input": normalized(source.name),
         "inputKind": "folder",
         "inputTreeSha256": tree_digest(source),
         "entrySource": entry_relative.as_posix(),
-        "entrySha256": digest(entry),
+        "entrySha256": digest(target / "index.html"),
         "files": files,
     }
     write_json(target / "archive-manifest.json", manifest)
+    verify_local_assets(target)
     return manifest
 
 
