@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "20260911-rir4000s",
-  "slug": "20260911-rir4000s",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20260911-rir4000s-delivery",
+  "slug": "20260911-rir4000s-delivery",
   "date": "2026-09-11",
-  "title": "서해박속낙지 RIR4000S 배송 배포 통합정리 모든이미지",
+  "title": "서해박속낙지 RIR4000S 배송 통합 기록",
+  "category": "시설·인테리어",
   "input": "20260911_서해박속낙지_RIR4000S_배송_배포_통합정리_모든이미지",
   "inputKind": "folder",
-  "inputSha256": "3a19048085b939d56a1428c8f9597ed8db4d96f3a6d02ad771af43a467a9480b",
+  "inputTreeSha256": "3a19048085b939d56a1428c8f9597ed8db4d96f3a6d02ad771af43a467a9480b",
   "entrySource": "index.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "6283ed1502a005db5d463683228efeade78488c530023af7d71fccb535be343b",
   "files": [
     {

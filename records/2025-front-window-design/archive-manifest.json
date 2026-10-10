@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "archive-2025",
-  "slug": "archive-2025",
-  "date": "",
-  "title": "2025 서해박속낙지 전면유리 박배경 디자인자료",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "2025-front-window-design",
+  "slug": "2025-front-window-design",
+  "date": "2025",
+  "title": "서해박속낙지 전면 유리 박 배경 디자인 자료",
+  "category": "디자인",
   "input": "2025_서해박속낙지_전면유리_박배경_디자인자료",
   "inputKind": "folder",
-  "inputSha256": "8eeacb68769db856a1d8bf543638e60e787cd03caaaf90ff1e8ebebe11f80906",
+  "inputTreeSha256": "8eeacb68769db856a1d8bf543638e60e787cd03caaaf90ff1e8ebebe11f80906",
   "entrySource": "서해박속낙지_전면유리_박배경_디자인자료.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "83237accae9f5fecd0da2afad26189524a1ca06bf54d5661452a9cbf3fa8c51d",
   "files": [
     {

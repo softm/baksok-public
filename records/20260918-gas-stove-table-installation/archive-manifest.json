@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "20260918-a2633b9c83",
-  "slug": "20260918-a2633b9c83",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20260918-gas-stove-table-installation",
+  "slug": "20260918-gas-stove-table-installation",
   "date": "2026-09-18",
-  "title": "서해박속낙지 가스렌지 식탁설치 가스재연결",
+  "title": "서해박속낙지 가스레인지·식탁 설치 및 가스 재연결",
+  "category": "시설·인테리어",
   "input": "20260918_서해박속낙지_가스렌지_식탁설치_가스재연결",
   "inputKind": "folder",
-  "inputSha256": "a2633b9c83d6ad8c94b0e72912b7a941d57446d9ed4f6cc8472dd519a06593ea",
+  "inputTreeSha256": "a2633b9c83d6ad8c94b0e72912b7a941d57446d9ed4f6cc8472dd519a06593ea",
   "entrySource": "20260918_서해박속낙지_가스렌지_식탁설치_가스재연결.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "52b599c2324db2838fae57cd90f9e7c13f2a0cf7ebf0dd81425cc994f7633acf",
   "files": [
     {

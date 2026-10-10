@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "20261005-dab72ba864",
-  "slug": "20261005-dab72ba864",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20261005-business-card-design",
+  "slug": "20261005-business-card-design",
   "date": "2026-10-05",
-  "title": "서해박속낙지 명함디자인 정리 모든이미지포함",
+  "title": "서해박속낙지 명함 디자인 정리",
+  "category": "디자인",
   "input": "20261005_서해박속낙지_명함디자인_정리_모든이미지포함",
   "inputKind": "folder",
-  "inputSha256": "dab72ba8647945a98be44a7187dfe2c28616646ca1c66635ceb27741f22f136d",
+  "inputTreeSha256": "dab72ba8647945a98be44a7187dfe2c28616646ca1c66635ceb27741f22f136d",
   "entrySource": "서해박속낙지_명함디자인_정리.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "1d588a657572abd173644afa09d9f2b6f7cbf07aa6c4d59587774f94cc0f136c",
   "files": [
     {

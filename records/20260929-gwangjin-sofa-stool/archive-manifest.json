@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "20260929-fb599d4310",
-  "slug": "20260929-fb599d4310",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20260929-gwangjin-sofa-stool",
+  "slug": "20260929-gwangjin-sofa-stool",
   "date": "2026-09-29",
-  "title": "서해박속낙지 광진소파 스툴 제작완료",
+  "title": "서해박속낙지 광진소파 스툴 제작 완료",
+  "category": "시설·인테리어",
   "input": "20260929_서해박속낙지_광진소파_스툴_제작완료",
   "inputKind": "folder",
-  "inputSha256": "fb599d4310b5a1b66f99da48526695b3c5b1ce6b83845466daa9dd65f1b80dda",
+  "inputTreeSha256": "fb599d4310b5a1b66f99da48526695b3c5b1ce6b83845466daa9dd65f1b80dda",
   "entrySource": "index.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "d862c84f64768aac75d2794fc5555333436cae0324c6a9408e9fb829b56cc27c",
   "files": [
     {
@@ -66,6 +66,11 @@
       "path": "index.html",
       "size": 6743,
       "sha256": "d862c84f64768aac75d2794fc5555333436cae0324c6a9408e9fb829b56cc27c"
+    },
+    {
+      "path": "source-archive-manifest.json",
+      "size": 2089,
+      "sha256": "73a2de501b0ce60b889210675a80032be33b87d40701f17e7db69a111af1a960"
     }
   ]
 }

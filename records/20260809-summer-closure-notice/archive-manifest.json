@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "20260809-520879f75d",
-  "slug": "20260809-520879f75d",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20260809-summer-closure-notice",
+  "slug": "20260809-summer-closure-notice",
   "date": "2026-08-09",
-  "title": "서해박속낙지 여름휴업 안내문 채팅정리",
-  "input": "20260809_서해박속낙지_여름휴업_안내문_채팅정리",
+  "title": "서해박속낙지 여름 휴업 안내문",
+  "category": "운영 안내",
+  "input": "20260809_서해박속낙지_여름휴업_안내문_채팅정리",
   "inputKind": "folder",
-  "inputSha256": "520879f75d13006afc7ef1b7ce9174dc9ba7037d3201552ed0ce9b02f00a6be2",
+  "inputTreeSha256": "520879f75d13006afc7ef1b7ce9174dc9ba7037d3201552ed0ce9b02f00a6be2",
   "entrySource": "index.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "b3cfcbcaf380821103d57b4b9d6fc755f99aaac0cd44309a2fc76ef09f978abf",
   "files": [
     {

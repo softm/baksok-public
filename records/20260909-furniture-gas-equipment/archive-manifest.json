@@ -1,15 +1,15 @@
 {
-  "schemaVersion": 2,
-  "id": "20260909-2cddae69ac",
-  "slug": "20260909-2cddae69ac",
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20260909-furniture-gas-equipment",
+  "slug": "20260909-furniture-gas-equipment",
   "date": "2026-09-09",
-  "title": "서해박속낙지 이가구 가스설비 사진포함",
+  "title": "서해박속낙지 이가구·가스 설비 자료",
+  "category": "시설·인테리어",
   "input": "20260909_서해박속낙지_이가구_가스설비_사진포함",
   "inputKind": "folder",
-  "inputSha256": "2cddae69acd9b691aa27e84fead32dff44dbcc7fd8a8da0ccf8da34d71afaa47",
+  "inputTreeSha256": "2cddae69acd9b691aa27e84fead32dff44dbcc7fd8a8da0ccf8da34d71afaa47",
   "entrySource": "index.html",
-  "entryType": "html-source",
-  "generatedHtml": false,
   "entrySha256": "781ef49f24a7a40fb541242744e4b1ca5a3e801d39f3d337baeeabdc448e0c7d",
   "files": [
     {
