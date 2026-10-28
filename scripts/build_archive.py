@@ -61,6 +61,12 @@ RECORDS = {
         "title": "서해박속낙지 명함 디자인 정리",
         "category": "디자인",
     },
+    "20261028_광고판_아카이브": {
+        "slug": "20261028-eoriguljeot-perilla-oil-posters",
+        "date": "2026-10-28",
+        "title": "서해박속낙지 어리굴젓·들기름 광고판 제작",
+        "category": "디자인",
+    },
 }
 
 

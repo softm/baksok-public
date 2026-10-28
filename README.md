@@ -1,7 +1,7 @@
 # 서해박속낙지 공개 아카이브
 
 공개 기록은 `records/<canonical-id>/` 아래에 날짜 기준으로 보관합니다.
-`zip/`의 7개 원본 폴더만을 입력으로 사용하며 `scripts/build_archive.py`로 전체 기록을 다시 만듭니다.
+`zip/`의 8개 원본 폴더만을 입력으로 사용하며 `scripts/build_archive.py`로 전체 기록을 다시 만듭니다.
 
 ## 공개 기록
 
@@ -12,3 +12,4 @@
 - [2026-09-18 서해박속낙지 가스레인지·식탁 설치 및 가스 재연결](records/20260918-gas-stove-table-installation/)
 - [2026-09-29 서해박속낙지 광진소파 스툴 제작 완료](records/20260929-gwangjin-sofa-stool/)
 - [2026-10-05 서해박속낙지 명함 디자인 정리](records/20261005-business-card-design/)
+- [2026-10-28 서해박속낙지 어리굴젓·들기름 광고판 제작](records/20261028-eoriguljeot-perilla-oil-posters/)

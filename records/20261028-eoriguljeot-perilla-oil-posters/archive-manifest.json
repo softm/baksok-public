@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "visibility": "public",
+  "id": "20261028-eoriguljeot-perilla-oil-posters",
+  "slug": "20261028-eoriguljeot-perilla-oil-posters",
+  "date": "2026-10-28",
+  "title": "서해박속낙지 어리굴젓·들기름 광고판 제작",
+  "category": "디자인",
+  "input": "20261028_광고판_아카이브",
+  "inputKind": "folder",
+  "inputTreeSha256": "58ef737bc547d905aa33a4ee8ea7b64ad93c7f92f92a79a02d556e2303de721c",
+  "entrySource": "index.html",
+  "entrySha256": "22e4a7c3a0192e2522d30052ed9f3be3bd8799344bbaeb23a3dcaba013cbeee9",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 2487,
+      "sha256": "783e7af37feabe7e0bbd9a4c3ee203dd26851bc93b421d81fcb5bf42804e9ff6"
+    },
+    {
+      "path": "images/들기름_광고판_A4.png",
+      "size": 3235146,
+      "sha256": "38220f25ba53f1912f0e2b13975c6a7db915ecb73e0b0aab74a35fee72b71d22"
+    },
+    {
+      "path": "images/어리굴젓_광고판_A4.png",
+      "size": 3316372,
+      "sha256": "859d06eb02b2e581c5df398fba6b7fddcf33204831d5acc21450f407ea94135a"
+    },
+    {
+      "path": "index.html",
+      "size": 8037,
+      "sha256": "22e4a7c3a0192e2522d30052ed9f3be3bd8799344bbaeb23a3dcaba013cbeee9"
+    }
+  ]
+}
