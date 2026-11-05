@@ -53,6 +53,8 @@ jobs:
           if [ -d records ]; then cp -a records _site/records; fi
           touch _site/.nojekyll
 
+      - name: Include app-ads.txt in Pages
+        run: cp app-ads.txt _site/app-ads.txt
       - name: Upload Pages artifact
         if: steps.preflight.outputs.ready == 'true'
         uses: actions/upload-pages-artifact@v3
